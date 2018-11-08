@@ -19,7 +19,7 @@ var filterSwitch = [1, 1, 1, 1, 1, 1];
 function initMap() {
     var lilis = [];
     var imglilitype = ['', './img/icon_blue.png', './img/icon_lightblue.png', './img/icon_yellow.png', './img/icon_red.png', './img/icon_lime.png'];
-    $.getJSON('https://spreadsheets.google.com/feeds/list/1eUgqe2z8gL1d9GrY2LwpAAxW9Wh2xOKOopqDNcISdpE/1/public/values?alt=json', function (dataLog) {
+    $.getJSON('https://spreadsheets.google.com/feeds/list/1ihryY0swLxIIB6DqRFIP7COvNwg9Ejx50oqKKi7TnGs/1/public/values?alt=json', function (dataLog) {
             var ltype = GetURLParameter("liliType");
 
             //            console.log("gJson");
@@ -45,11 +45,9 @@ function initMap() {
                     $(".lilisSet:last .liName").text(aName);
                     $(".lilisSet:last .liImg").attr("src", avatarImg);
                     $(".lilisSet:last .tagSet").html(aWhen + "  " + aWhere + "<br/>");
-                    if (alilitype == 1) $(".lilisSet:last .tagSet").append("<img src='./img/mark_1.png'/>清代時期");
-                    if (alilitype == 2) $(".lilisSet:last .tagSet").append("<img src='./img/mark_2.png'/>日治時期");
-                    if (alilitype == 3) $(".lilisSet:last .tagSet").append("<img src='./img/mark_3.png'/>國民政府來台");
-                    if (alilitype == 4) $(".lilisSet:last .tagSet").append("<img src='./img/mark_4.png'/>城市蓬勃發展");
-                    if (alilitype == 5) $(".lilisSet:last .tagSet").append("<img src='./img/mark_5.png'/>城市多元蛻變");
+                    if (alilitype == 1) $(".lilisSet:last .tagSet").append("<img src='./img/mark_1.png'/>記憶點");
+                    if (alilitype == 2) $(".lilisSet:last .tagSet").append("<img src='./img/mark_2.png'/>築城學校");
+                    if (alilitype == 3) $(".lilisSet:last .tagSet").append("<img src='./img/mark_3.png'/>合作藝術家");
                 }
 
                 var marker = new google.maps.Marker({
@@ -106,13 +104,7 @@ function initMap() {
         lat: 24.9947383,
         lng: 121.1893604
     };
-    //    var lilis = [
-    //        ['肉圓', 24.9947383, 121.1893604, '../img/icon_lightblue.png'],
-    //        ['肉圓2', 24.965992, 121.220625, '../img/icon_blue.png'],
-    //        ['肉圓3', 24.960049, 121.225325, '../img/icon_lime.png'],
-    //        ['肉圓4', 24.957740, 121.231640, '../img/icon_red.png'],
-    //        ['肉圓5', 24.954472, 121.235953, '../img/icon_yellow.png']
-    //    ];
+
 
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {
