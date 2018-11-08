@@ -310,6 +310,7 @@ a.lilisSet {
     height: 100%;
     position: absolute;
     text-align: center;
+    z-index: 15;
 }
 
 .warpRatio img {
@@ -470,6 +471,28 @@ a.lilisSet {
 
 .navToogle:unchecked ~ .listBox {
     animation: backgroundFadeOutlistBox 1s forwards;
+}
+
+
+
+.shadow {
+
+    display: block;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-shadow: #f7f7f4 0px 0px 10px inset;
+    -webkit-box-shadow: #f7f7f4 0px 0px 10px inset;
+    box-shadow: #000 0px 0px 100px inset;
+}
+
+
+.shadow .liImg {
+    height: 100%;
+    max-width: 100%;
+    position: relative;
+    z-index: -1;
 }
 
 @keyframes backgroundFadeInlistBox {
