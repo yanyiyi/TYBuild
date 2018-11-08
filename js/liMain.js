@@ -10,8 +10,8 @@ function GetURLParameter(sParam) {
 };
 
 var lilis = [];
-var imglilitype = ['', '../img/icon_blue.png', '../img/icon_lightblue.png', '../img/icon_yellow.png', '../img/icon_red.png', '../img/icon_lime.png'];
-$.getJSON('https://spreadsheets.google.com/feeds/list/1eUgqe2z8gL1d9GrY2LwpAAxW9Wh2xOKOopqDNcISdpE/1/public/values?alt=json', function (dataLog) {
+var imglilitype = ['', '../img/icon_red.png', '../img/icon_blue.png', '../img/icon_lightblue.png', '../img/icon_yellow.png', '../img/icon_lime.png'];
+$.getJSON('https://spreadsheets.google.com/feeds/list/1ihryY0swLxIIB6DqRFIP7COvNwg9Ejx50oqKKi7TnGs/1/public/values?alt=json', function (dataLog) {
 
         //        console.log("gJson");
         var i = GetURLParameter("liliID") - 1;
@@ -49,12 +49,10 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1eUgqe2z8gL1d9GrY2LwpAAxW9
         $('meta[property="og:url"]').attr("content", "https://lili.tyc.land/lili.html?liliID=" + j);
 
         $(".tagSet").append(aWhen + " " + aWhere + "<br/>");
-        if (alilitype == 1) $(".tagSet").append("<a href='./index.html?liliType=1'><img src='./img/mark_1.png'/>清代時期</a>");
-        if (alilitype == 2) $(".tagSet").append("<a href='./index.html?liliType=2'><img src='./img/mark_2.png'/>日治時期</a>");
-        if (alilitype == 3) $(".tagSet").append("<a href='./index.html?liliType=3'><img src='./img/mark_3.png'/>國民政府來台</a>");
-        if (alilitype == 4) $(".tagSet").append("<a href='./index.html?liliType=4'><img src='./img/mark_4.png'/>城市蓬勃發展</a>");
-        if (alilitype == 5) $(".tagSet").append("<a href='./index.html?liliType=5'><img src='./img/mark_5.png'/>城市多元蛻變</a>");
-        $("#liliMain iframe.youtube-player").attr("src", "https://www.youtube.com/embed/" + aYTLink);
+        if (alilitype == 1) $(".tagSet").append("<a href='./index.html?liliType=1'><img src='./img/mark_1.png'/>記憶點</a>");
+        if (alilitype == 2) $(".tagSet").append("<a href='./index.html?liliType=2'><img src='./img/mark_2.png'/>築城學校</a>");
+        if (alilitype == 3) $(".tagSet").append("<a href='./index.html?liliType=3'><img src='./img/mark_3.png'/>合作藝術家</a>");
+
         var aStorySplit = aStory.split(" ");
         for (var aSS = 0; aSS < aStorySplit.length; aSS++) {
             $(".aContext").append("<p>" + aStorySplit[aSS] + "</p>");

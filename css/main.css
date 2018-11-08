@@ -59,19 +59,19 @@ p {
 
 #navBar a:nth-child(1),
 .navBar a:nth-child(1) {
-    background: url(../img/mark_1.png) left no-repeat;
+    background: url(../img/mark_4.png) left no-repeat;
     background-size: contain;
 }
 
 #navBar a:nth-child(2),
 .navBar a:nth-child(2) {
-    background: url(../img/mark_2.png) left no-repeat;
+    background: url(../img/mark_1.png) left no-repeat;
     background-size: contain;
 }
 
 #navBar a:nth-child(3),
 .navBar a:nth-child(3) {
-    background: url(../img/mark_3.png) left no-repeat;
+    background: url(../img/mark_2.png) left no-repeat;
     background-size: contain;
 }
 
@@ -137,19 +137,19 @@ footer {
 
 #navBar a:nth-child(1):hover,
 .navBar a:nth-child(1):hover {
-    background: url(../img/mark_1hover.png) left no-repeat;
+    background: url(../img/mark_4hover.png) left no-repeat;
     background-size: contain;
 }
 
 #navBar a:nth-child(2):hover,
 .navBar a:nth-child(2):hover {
-    background: url(../img/mark_2hover.png) left no-repeat;
+    background: url(../img/mark_1hover.png) left no-repeat;
     background-size: contain;
 }
 
 #navBar a:nth-child(3):hover,
 .navBar a:nth-child(3):hover {
-    background: url(../img/mark_3hover.png) left no-repeat;
+    background: url(../img/mark_2hover.png) left no-repeat;
     background-size: contain;
 }
 
@@ -189,14 +189,14 @@ footer {
     width: 65%;
     float: left;
     position: absolute;
-    bottom: 2em;
+    bottom: 0.8em;
     right: 0px;
     padding: 0 2.5%;
 }
 
 .decWords p {
-    font-size: 0.8em;
-    line-height: 150%;
+    font-size: 0.75em;
+    line-height: 120%;
     letter-spacing: 0.2em;
     text-align: justify;
     color: #666;
