@@ -283,9 +283,9 @@ h2 {
 
 .warpRatio {
     position: relative;
-    padding-bottom: 56.26%;
+    padding-bottom: 60%;
     overflow: hidden;
-    margin: 2%;
+    margin: 0 4%;
     display: block;
 }
 
@@ -315,7 +315,7 @@ a.lilisSet {
 }
 
 .warpRatio img {
-    height: 95%;
+    height: 100%;
     position: relative;
     margin: 0 auto;
 }
