@@ -44,7 +44,7 @@ function initMap() {
                     $(".lilisSet:last").attr("href", "./lili.html?liliID=" + aZ);
                     $(".lilisSet:last .liName").text(aName);
                     $(".lilisSet:last .liImg").attr("src", avatarImg);
-                    $(".lilisSet:last .tagSet").html(aWhen + "  " + aWhere + "<br/>");
+                    $(".lilisSet:last .tagSet").html(aWhen + "<br/>");
                     if (alilitype == 1) $(".lilisSet:last .tagSet").append("<img src='./img/mark_1.png'/>築城記憶點");
                     if (alilitype == 2) $(".lilisSet:last .tagSet").append("<img src='./img/mark_2.png'/>築城學校");
                     if (alilitype == 3) $(".lilisSet:last .tagSet").append("<img src='./img/mark_3.png'/>築城藝術家");

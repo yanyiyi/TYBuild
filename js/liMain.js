@@ -30,7 +30,7 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1ihryY0swLxIIB6DqRFIP7COvN
         var aIntro = dataLog.feed.entry[i].gsx$intro.$t;
         //        alert(aName);
 
-        $("title").append("－No." + j + " LiLi：" + aName);
+        $("title").append("－No." + j + " 記憶點：" + aName);
         $('meta[itemprop="name"]').attr("content", "築城記－No." + j + " 記憶：" + aName);
         $('meta[name="twitter:title"]').attr("content", "築城記－No." + j + " 記憶：" + aName);
         $('meta[property="og:title"]').attr("content", "築城記－No." + j + " 記憶：" + aName);
@@ -40,20 +40,20 @@ $.getJSON('https://spreadsheets.google.com/feeds/list/1ihryY0swLxIIB6DqRFIP7COvN
         $('meta[itemprop="description"]').attr("content", aIntro);
         $("#liName").text(aName);
         var avatarImg = "./img/avatar/" + j + ".png";
-        var avatarImgOG = "https://lili.tyc.land/img/avatar/" + j + ".png";
+        var avatarImgOG = "https://build.tyc.land/img/avatar/" + j + ".png";
         $("#liImg").attr("src", avatarImg);
         $('meta[property="og:image"]').attr("content", avatarImgOG);
         $('meta[name="twitter:image:src"]').attr("content", avatarImgOG);
         $('meta[name="twitter:card"]').attr("content", avatarImgOG);
         $('meta[itemprop="image"]').attr("content", avatarImgOG);
-        $('meta[property="og:url"]').attr("content", "https://lili.tyc.land/lili.html?liliID=" + j);
+        $('meta[property="og:url"]').attr("content", "https://build.tyc.land/lili.html?liliID=" + j);
 
-        $(".tagSet").append(aWhen + " " + aWhere + "<br/>");
+        $(".tagSet").append(aWhen + "<br/>");
         if (alilitype == 1) $(".tagSet").append("<a href='./index.html?liliType=1'><img src='./img/mark_1.png'/>築城記憶點</a>");
         if (alilitype == 2) $(".tagSet").append("<a href='./index.html?liliType=2'><img src='./img/mark_2.png'/>築城學校</a>");
         if (alilitype == 3) $(".tagSet").append("<a href='./index.html?liliType=3'><img src='./img/mark_3.png'/>築城藝術家</a>");
 
-        var aStorySplit = aStory.split(" ");
+        var aStorySplit = aStory.split("  ");
         for (var aSS = 0; aSS < aStorySplit.length; aSS++) {
             $(".aContext").append("<p>" + aStorySplit[aSS] + "</p>");
         }
